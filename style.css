@@ -1,0 +1,78 @@
+body{
+    background-image: linear-gradient(to top right,
+        #CC64A2, #5C3075
+    );
+    min-height: 100vh;
+    line-height: 20px;
+    font-family: monospace;
+}
+.container{
+    width:900px;
+    margin:150px auto 0;
+}
+.list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 20px;
+}
+.item .img img{
+    height:200px;
+    transition: 0.5s;
+}
+.item .img{
+    background-image: linear-gradient(to top right,
+        #D89CD1, #D499D4
+    );
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.item .content{
+    background-color: #ffffff24;
+    border-radius: 30px;
+    padding:50px 30px;
+    transform: translate(0,-50px);
+    backdrop-filter: blur(20px);
+    color:#fff;
+}
+.title{
+    font-size: x-large;
+}
+.item .content .des{
+    opacity: .7;
+    margin:10px 0;
+}
+.item .content .price{
+    font-size: large;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+}
+.item .content .add{
+    background-color: #B192EF;
+    padding:20px;
+    color:#fff;
+    width:100%;
+    border:none;
+    border-radius: 30px;
+}
+.item:hover img{
+    transform: translate(0,-50px);
+}
+.listPage{
+    padding:10px;
+    text-align: center;
+    list-style: none;
+}
+.listPage li{
+    background-color: #ffffffBD;
+    padding:20px;
+    display: inline-block;
+    margin:0 10px;
+    cursor: pointer;
+}
+.listPage .active{
+    background-color: #B192EF;
+    color:#fff;
+}
